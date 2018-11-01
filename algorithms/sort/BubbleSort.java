@@ -12,7 +12,7 @@ package algorithms.sort;
  */
 public class BubbleSort {
 
-    public static int[] bubbleSort(int[] nums){
+    public static int[] sort(int[] nums){
 
         if(nums==null||nums.length<2){
             return nums;

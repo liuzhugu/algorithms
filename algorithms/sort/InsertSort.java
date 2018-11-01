@@ -10,7 +10,7 @@ package algorithms.sort;
  *  找到待插入的目的地以后才插入，交换操作少很多
  */
 public class InsertSort {
-    public static int[] insertSort(int[] nums){
+    public static int[] sort(int[] nums){
         if(nums==null||nums.length<2){
             return nums;
         }

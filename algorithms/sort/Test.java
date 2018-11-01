@@ -4,20 +4,25 @@ public class Test {
 
     public static void main(String[] args){
 
-        int[] nums=new int[]{1,5,7,2,4,3,8,9,6,0,1,3,4,5};
-        int[] result;
+        int[] nums=new int[]{4,5,6,7,3,2};
 
         //BubbleSort
-        //printResult("BubbleSort",BubbleSort.bubbleSort(nums));
+        //printResult("BubbleSort",BubbleSort.sort(nums));
 
         //SelectSort
-        //printResult("SelectSort",SelectSort.selectSort(nums));
+        //printResult("SelectSort",SelectSort.sort(nums));
 
         //InsertSort
-        //printResult("InsertSort",InsertSort.insertSort(nums));
+        //printResult("InsertSort",InsertSort.sort(nums));
 
         //ParadiseSort
-        printResult("ParadiseSort",ParadiseSort.paradiseSort(nums));
+        //printResult("ParadiseSort",ParadiseSort.sort(nums));
+
+        //QuickSort
+        printResult("QuickSort",QuickSort.sort(nums));
+
+        //Quick3Way
+        //printResult("Quick3Way",Quick3Way.sort(nums));
 
     }
 

@@ -2,7 +2,7 @@ package algorithms.sort;
 
 /**
  *  Created by liuzhugu on 2018/10/30
- *  冒泡算法
+ *  归并算法
  *  平均时间复杂度:O(nlogn)
  *  最坏时间复杂度:O(nlogn)
  *  非原地排序，需空间O(n)

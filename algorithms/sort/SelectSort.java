@@ -9,7 +9,7 @@ package algorithms.sort;
 
 public class SelectSort {
 
-    public static int[] selectSort(int[] nums){
+    public static int[] sort(int[] nums){
 
         if(nums==null||nums.length<2){
             return nums;
