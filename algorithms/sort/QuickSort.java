@@ -13,24 +13,18 @@ import java.util.Random;
 public class QuickSort {
 
     public static int[] sort(int[] nums){
-
         if(nums==null||nums.length<2){
             return nums;
         }
-
         sort(nums,0,nums.length-1);
-
         return nums;
     }
 
     public static void  sort(int[] nums,int start,int end){
-
         if(start>=end){
             return ;
         }
-
         int k=partition(nums,start,end);
-
         sort(nums,start,k-1);
         sort(nums,k+1,end);
     }
