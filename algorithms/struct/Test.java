@@ -3,6 +3,7 @@ package algorithms.struct;
 public class Test {
 
     public static void main(String[] args){
+//        Heap heap=new Heap(false);
 //        Heap heap=new Heap();
 //        heap.add(1);
 //        heap.add(9);
@@ -15,14 +16,12 @@ public class Test {
 //        heap.remove(8);
 //        heap.remove(1);
 //        heap.add(8);
-        Heap heap=new Heap(new int[]{1,45,778,22,12,41,33,99,11,25,88});
 
-        System.out.println(heap.toString());
+        //Heap heap=new Heap(new int[]{1,45,778,22,12,41,33,99,11,25,88});
+        Heap heap=new Heap(new int[]{1,45,778,22,12,41,33,99,11,25,88,11},false);
 
-        int num;
-        while((num=heap.peek())!=-1){
-            System.out.print(num+" ");
-            heap.remove(num);
+        while(heap.peek()!=-1){
+            System.out.print(heap.pop()+" ");
         }
     }
 }

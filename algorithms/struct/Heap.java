@@ -3,7 +3,7 @@ package algorithms.struct;
 import java.util.Arrays;
 
 /**
- * 最大堆
+ * 堆
  * */
 public class Heap {
 
@@ -13,18 +13,27 @@ public class Heap {
 
     private static final int DEFAULT_SIZE = 16;
 
+    private boolean isMax;
+
     public Heap(){
+        this(true);
+    }
+    public Heap(boolean isMax){
         heap = new int[DEFAULT_SIZE];
         size=0;
+        this.isMax=isMax;
     }
-
     public Heap(int[] nums){
+        this(nums,true);
+    }
+    public Heap(int[] nums,boolean isMax){
         if(nums!=null||nums.length!=0){
             heap=Arrays.copyOf(nums,nums.length);
             size=nums.length;
             //堆化
             headify();
         }
+        this.isMax=isMax;
     }
 
     public int peek(){
@@ -32,6 +41,20 @@ public class Heap {
             return heap[0];
         }
         return -1;
+    }
+
+    public int size(){
+        return size;
+    }
+
+    public int poll(){
+        if(peek()==-1){
+            return -1;
+        }else {
+            int value=peek();
+            remove(value);
+            return value;
+        }
     }
 
     public void add(int num){
@@ -98,7 +121,11 @@ public class Heap {
         heap[index]=replace;
         while(index>0){
             int parent=index/2;
-            if(heap[parent]<heap[index]) swap(index,parent);
+            if(isMax){
+                if(heap[parent]<heap[index]) swap(index,parent);
+            }else {
+                if(heap[parent]>heap[index]) swap(index,parent);
+            }
             index=parent;
         }
     }
@@ -112,8 +139,13 @@ public class Heap {
         heap[index]=replace;
         while(index<heap.length){
             int leftChild=index*2+1,rightChild=leftChild+1,tmpNo=index;
-            if(leftChild<heap.length&&heap[leftChild]>heap[tmpNo])tmpNo=leftChild;
-            if(rightChild<heap.length&&heap[rightChild]>heap[tmpNo])tmpNo=rightChild;
+            if(isMax){
+                if(leftChild<size&&heap[leftChild]>heap[tmpNo])tmpNo=leftChild;
+                if(rightChild<size&&heap[rightChild]>heap[tmpNo])tmpNo=rightChild;
+            }else {
+                if(leftChild<size&&heap[leftChild]<heap[tmpNo])tmpNo=leftChild;
+                if(rightChild<size&&heap[rightChild]<heap[tmpNo])tmpNo=rightChild;
+            }
             if(tmpNo==index){
                 break;
             }
@@ -128,8 +160,7 @@ public class Heap {
         heap[second]=tmp;
     }
 
-    @Override
-    public String toString(){
-        return heap.toString();
+    public void print(){
+        System.out.print(Arrays.toString(Arrays.copyOf(heap,size)).replace("[","").replace("]",""));
     }
 }
