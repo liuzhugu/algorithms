@@ -21,7 +21,7 @@ public class Test {
         Heap heap=new Heap(new int[]{1,45,778,22,12,41,33,99,11,25,88,11},false);
 
         while(heap.peek()!=-1){
-            System.out.print(heap.pop()+" ");
+            System.out.print(heap.poll()+" ");
         }
     }
 }
