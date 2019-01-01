@@ -17,6 +17,7 @@ public class IsSymmetric {
         }
         if(root.left==null||root.right==null){
             return false;
+
         }
 
         Stack<TreeNode> leftNodes =new Stack<>();
