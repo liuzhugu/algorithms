@@ -9,5 +9,7 @@ public class LinkedTest {
         Node firstNode=NodeUtil.buildNode(first);
         Node secondNode=NodeUtil.buildNode(second);
         PrintCommonPart.print(firstNode,secondNode);
+
+        //
     }
 }

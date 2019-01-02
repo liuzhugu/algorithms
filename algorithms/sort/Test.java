@@ -25,7 +25,7 @@ public class Test {
         //printResult("Quick3Way",Quick3Way.sort(nums));
 
         //CountingStar
-        printResult("CountingStar",CountingStar.sort(nums));
+        printResult("CountingStar", CountingStar.sort(nums));
     }
 
     public static void printResult(String name,int[] result){
