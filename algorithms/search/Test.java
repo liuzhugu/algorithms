@@ -1,7 +1,5 @@
 package algorithms.search;
 
-import algorithms.sort.CountingSort;
-
 public class Test {
 
     public static void main(String[] args){
