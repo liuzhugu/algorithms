@@ -1,4 +1,4 @@
-package algorithms.struct;
+package struct;
 
 import java.util.Arrays;
 

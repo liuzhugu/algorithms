@@ -1,7 +1,5 @@
 package algorithms.za;
 
-import algorithms.struct.Heap;
-
 /**
  * 求中值
  * */
