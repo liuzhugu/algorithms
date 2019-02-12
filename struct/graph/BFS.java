@@ -9,12 +9,12 @@ import java.util.Queue;
  * */
 public class BFS {
 
-    public void visit(UndirectedGraph graph,int s,int t){
+    public static void visit(Graph graph,int s,int t){
         if(s==t){
             return;
         }
         //已访问的节点
-        Boolean[] visited=new Boolean[graph.getV()];
+        boolean[] visited=new boolean[graph.getV()];
         //等待遍历的节点
         Queue<Integer> waitToVisit=new LinkedList<>();
         //记录访问的顺序
@@ -31,9 +31,9 @@ public class BFS {
             LinkedList<Integer> nextList=graph.getNextList(current);
             for(int next:nextList){
                 //该下一个节点未被访问过
-                if(visited[next]!=true){
+                if(!visited[next]){
                     //访问该节点
-                    pre[next]=s;
+                    pre[next]=current;
                     //抵达终点
                     if(next==t){
                         //打印途经路径
@@ -47,14 +47,14 @@ public class BFS {
         }
     }
 
-    private void print(int[] pre,int s,int t){
+    private static void print(int[] pre,int s,int t){
         if(pre[t]!=-1 && t!=s){
             print(pre,s,pre[t]);
         }
         System.out.print(t+" ");
     }
 
-    public void visit(DirectedGraph graph,int s,int t){
+    public static void visit(DirectedGraph graph,int s,int t){
 
     }
 }

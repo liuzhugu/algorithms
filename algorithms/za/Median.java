@@ -1,6 +1,6 @@
 package algorithms.za;
 
-import algorithms.struct.Heap;
+import struct.Heap;
 
 
 public class Median {
