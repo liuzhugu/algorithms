@@ -1,6 +1,5 @@
 package algorithms.search;
 
-import algorithms.sort.CountingSort;
 
 public class Test {
 
