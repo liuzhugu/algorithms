@@ -45,6 +45,17 @@ public class FindAndReplacePattern {
                     }
                 }
             }
+            //因为不同list里面的字符也不应该相同,而同个list里的应该相同
+            //但前一个for循环验证了后者,所以接下来得验证前者
+            Set<String> checkList = new HashSet<>();
+            for (List<Integer> indexs : indexList) {
+                if (checkList.contains(charList[indexs.get(0)]+"")) {
+                    //说明不同list的字符相同,跳过该字符
+                    continue nextString;
+                }else {
+                    checkList.add(charList[indexs.get(0)]+"");
+                }
+            }
             result.add(string);
         }
         return result;

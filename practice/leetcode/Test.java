@@ -32,24 +32,30 @@ public class Test {
 //        TreeNode treeNode=codec.deserialize(str);
 //        codec.serialize(treeNode);
 
-        ListNode first = new ListNode(1);
-        ListNode second = new ListNode(2);
-        first.next = second;
-        ListNode third = new ListNode(3);
-        second.next = third;
-        ListNode fouth = new ListNode(4);
-        third.next = fouth;
+//        ListNode first = new ListNode(1);
+//        ListNode second = new ListNode(2);
+//        first.next = second;
+//        ListNode third = new ListNode(3);
+//        second.next = third;
+//        ListNode fouth = new ListNode(4);
+//        third.next = fouth;
+//
+//        ListNode first1 = new ListNode(1);
+//        ListNode second1 = new ListNode(2);
+//        first1.next = second1;
+//        ListNode third1 = new ListNode(3);
+//        second1.next = third1;
+//        ListNode fouth1 = new ListNode(8);
+//        third1.next = fouth1;
+//
+//        AddTwoNumbers addTwoNumbers = new AddTwoNumbers();
+//        ListNode result = addTwoNumbers.addTwoNumbers(first,first1);
+//        System.out.print(result.val);
 
-        ListNode first1 = new ListNode(1);
-        ListNode second1 = new ListNode(2);
-        first1.next = second1;
-        ListNode third1 = new ListNode(3);
-        second1.next = third1;
-        ListNode fouth1 = new ListNode(8);
-        third1.next = fouth1;
-
-        AddTwoNumbers addTwoNumbers = new AddTwoNumbers();
-        ListNode result = addTwoNumbers.addTwoNumbers(first,first1);
-        System.out.print(result.val);
+        //890 查找和替换模式
+        String[] words = new String[]{"abc","deq","mee","aqq","dkd","ccc"};
+        String pattern = "abb";
+        FindAndReplacePattern findAndReplacePattern = new FindAndReplacePattern();
+        findAndReplacePattern.findAndReplacePattern(words,pattern);
     }
 }
