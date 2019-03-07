@@ -53,9 +53,15 @@ public class Test {
 //        System.out.print(result.val);
 
         //890 查找和替换模式
-        String[] words = new String[]{"abc","deq","mee","aqq","dkd","ccc"};
-        String pattern = "abb";
-        FindAndReplacePattern findAndReplacePattern = new FindAndReplacePattern();
-        findAndReplacePattern.findAndReplacePattern(words,pattern);
+//        String[] words = new String[]{"abc","deq","mee","aqq","dkd","ccc"};
+//        String pattern = "abb";
+//        FindAndReplacePattern findAndReplacePattern = new FindAndReplacePattern();
+//        findAndReplacePattern.findAndReplacePattern(words,pattern);
+
+        //306. 累加数
+        IsAdditiveNumber isAdditiveNumber = new IsAdditiveNumber();
+        System.out.println(isAdditiveNumber.isAdditiveNumber("01123"));
+        System.out.println(isAdditiveNumber.isAdditiveNumber("111122335588143"));
+        System.out.println(isAdditiveNumber.isAdditiveNumber("101020305080130210"));
     }
 }
