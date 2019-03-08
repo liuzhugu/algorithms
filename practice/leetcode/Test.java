@@ -59,9 +59,14 @@ public class Test {
 //        findAndReplacePattern.findAndReplacePattern(words,pattern);
 
         //306. 累加数
-        IsAdditiveNumber isAdditiveNumber = new IsAdditiveNumber();
-        System.out.println(isAdditiveNumber.isAdditiveNumber("01123"));
-        System.out.println(isAdditiveNumber.isAdditiveNumber("111122335588143"));
-        System.out.println(isAdditiveNumber.isAdditiveNumber("101020305080130210"));
+//        IsAdditiveNumber isAdditiveNumber = new IsAdditiveNumber();
+//        System.out.println(isAdditiveNumber.isAdditiveNumber("01123"));
+//        System.out.println(isAdditiveNumber.isAdditiveNumber("111122335588143"));
+//        System.out.println(isAdditiveNumber.isAdditiveNumber("101020305080130210"));
+
+        //621. 任务调度器
+        LeastInterval leastInterval = new LeastInterval();
+        char[] chars = new char[]{'A','A','A', 'B','B','B'};
+        System.out.println(leastInterval.leastInterval(chars,2));
     }
 }
