@@ -70,17 +70,20 @@ public class Test {
 //        System.out.println(leastInterval.leastInterval(chars,2));
 
         //328. 奇偶链表
-        ListNode head = new ListNode(1);
-        ListNode first = new ListNode(2);
-        head.next = first;
-        ListNode second = new ListNode(3);
-        first.next = second;
-        ListNode third = new ListNode(4);
-        second.next = third;
-        ListNode fouth = new ListNode(5);
-        third.next = fouth;
-        OddEvenList oddEvenList = new OddEvenList();
-        head = oddEvenList.oddEvenList(head);
-        System.out.print(head);
+//        ListNode head = new ListNode(1);
+//        ListNode first = new ListNode(2);
+//        head.next = first;
+//        ListNode second = new ListNode(3);
+//        first.next = second;
+//        ListNode third = new ListNode(4);
+//        second.next = third;
+//        ListNode fouth = new ListNode(5);
+//        third.next = fouth;
+//        OddEvenList oddEvenList = new OddEvenList();
+//        head = oddEvenList.oddEvenList(head);
+//        System.out.print(head);
+
+        //701. 二叉搜索树中的插入操作
+        InsertIntoBST insertIntoBST = new InsertIntoBST();
     }
 }
