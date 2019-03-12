@@ -1,5 +1,7 @@
 package practice.leetcode;
 
+import struct.Heap;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -84,6 +86,10 @@ public class Test {
 //        System.out.print(head);
 
         //701. 二叉搜索树中的插入操作
-        InsertIntoBST insertIntoBST = new InsertIntoBST();
+        //InsertIntoBST insertIntoBST = new InsertIntoBST();
+
+        //907. 子数组的最小值之和
+        SumSubarrayMins sumSubarrayMins = new SumSubarrayMins();
+        //System.out.println(sumSubarrayMins.sumSubarrayMins(new int[]{4,21,26,35,50,61,68,82,88,92,97,90,85,79,68,50,50,33,22,15}));
     }
 }
