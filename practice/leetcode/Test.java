@@ -93,11 +93,14 @@ public class Test {
         //System.out.println(sumSubarrayMins.sumSubarrayMins(new int[]{4,21,26,35,50,61,68,82,88,92,97,90,85,79,68,50,50,33,22,15}));
 
         //334. 递增的三元子序列
-        IncreasingTriplet increasingTriplet = new IncreasingTriplet();
-        System.out.println(increasingTriplet.increasingTriplet(new int[]{1,1,1,1}));
-        System.out.println(increasingTriplet.increasingTriplet(new int[]{2,1,5,0,3}));
-        System.out.println(increasingTriplet.increasingTriplet(new int[]{1,2,3,4,5}));
-        System.out.println(increasingTriplet.increasingTriplet(new int[]{5,4,3,2,1}));
+//        IncreasingTriplet increasingTriplet = new IncreasingTriplet();
+//        System.out.println(increasingTriplet.increasingTriplet(new int[]{1,1,1,1}));
+//        System.out.println(increasingTriplet.increasingTriplet(new int[]{2,1,5,0,3}));
+//        System.out.println(increasingTriplet.increasingTriplet(new int[]{1,2,3,4,5}));
+//        System.out.println(increasingTriplet.increasingTriplet(new int[]{5,4,3,2,1}));
 
+        //392. 判断子序列
+        IsSubsequence subsequence = new IsSubsequence();
+        System.out.println(subsequence.isSubsequence("axc","ahbgdc"));
     }
 }
