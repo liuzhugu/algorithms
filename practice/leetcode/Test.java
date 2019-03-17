@@ -104,10 +104,10 @@ public class Test {
 //        System.out.println(subsequence.isSubsequence("axc","ahbgdc"));
 
         //646. 最长数对链
-        FindLongestChain findLongestChain = new FindLongestChain();
-        int[][] pairs = new int[][]{{1,9},{-6,10},{-5,8},{5,8},{2,7},{-8,-3},{2,6},{-4,-2},{4,5},{0,4}} ;
-        System.out.println(findLongestChain.findLongestChain(pairs));
+//        FindLongestChain findLongestChain = new FindLongestChain();
+//        int[][] pairs = new int[][]{{1,9},{-6,10},{-5,8},{5,8},{2,7},{-8,-3},{2,6},{-4,-2},{4,5},{0,4}} ;
+//        System.out.println(findLongestChain.findLongestChain(pairs));
 
-        System.out.println("[[1,9],[-6,10],[-5,8],[5,8],[2,7],[-8,-3],[2,6],[-4,-2],[4,5],[0,4]]".replace("[","{").replace("]","}"));
+        //151. 翻转字符串里的单词
     }
 }
