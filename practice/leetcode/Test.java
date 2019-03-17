@@ -108,6 +108,8 @@ public class Test {
 //        int[][] pairs = new int[][]{{1,9},{-6,10},{-5,8},{5,8},{2,7},{-8,-3},{2,6},{-4,-2},{4,5},{0,4}} ;
 //        System.out.println(findLongestChain.findLongestChain(pairs));
 
-        //151. 翻转字符串里的单词
+        //135. 分发糖果
+        Candy candy = new Candy();
+        System.out.print(candy.candy(new int[]{1,6,10,8,7,3,2}));
     }
 }
