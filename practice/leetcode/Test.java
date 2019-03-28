@@ -150,9 +150,13 @@ public class Test {
         //System.out.println(reorganizeString.reorganizeString("aab"));
 
         //973. 最接近原点的 K 个点
-        KClosest kClosest = new KClosest();
-        System.out.println(kClosest.kClosest(new int[][]{{3,3},{5,-1},{-2,4}},2));
+        //KClosest kClosest = new KClosest();
+        //System.out.println(kClosest.kClosest(new int[][]{{3,3},{5,-1},{-2,4}},2));
 
-        //System.out.println("[[-66,42],[-67,94],[46,10],[35,27],[-9,-6],[-84,-97],[38,-22],[3,-39],[71,-97],[-40,-86],[-45,56],[-91,59],[24,-11],[91,100],[-68,43],[34,27]]".replace("[","{").replace("]","}"));
+        //695. 岛屿的最大面积
+        MaxAreaOfIsland maxAreaOfIsland = new MaxAreaOfIsland();
+        System.out.println(maxAreaOfIsland.maxAreaOfIsland(new int[][]{{1,1,1},{1,0,1}}));
+
+        //System.out.println("".replace("[","{").replace("]","}"));
     }
 }
