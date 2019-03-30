@@ -154,9 +154,13 @@ public class Test {
         //System.out.println(kClosest.kClosest(new int[][]{{3,3},{5,-1},{-2,4}},2));
 
         //695. 岛屿的最大面积
-        MaxAreaOfIsland maxAreaOfIsland = new MaxAreaOfIsland();
-        System.out.println(maxAreaOfIsland.maxAreaOfIsland(new int[][]{{1,1,1},{1,0,1}}));
+        //MaxAreaOfIsland maxAreaOfIsland = new MaxAreaOfIsland();
+        //System.out.println(maxAreaOfIsland.maxAreaOfIsland(new int[][]{{1,1,1},{1,0,1}}));
 
-        //System.out.println("".replace("[","{").replace("]","}"));
+        //542. 01 矩阵
+        UpdateMatrix updateMatrix = new UpdateMatrix();
+        System.out.println(updateMatrix.updateMatrix(new int[][]{{0,0,0},{0,1,0},{1,1,1}}));
+
+        //System.out.println("[[0,0,0],[0,1,0],[0,0,0]]".replace("[","{").replace("]","}"));
     }
 }
