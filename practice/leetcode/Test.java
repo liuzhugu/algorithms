@@ -158,8 +158,12 @@ public class Test {
         //System.out.println(maxAreaOfIsland.maxAreaOfIsland(new int[][]{{1,1,1},{1,0,1}}));
 
         //542. 01 矩阵
-        UpdateMatrix updateMatrix = new UpdateMatrix();
-        System.out.println(updateMatrix.updateMatrix(new int[][]{{0,0,0},{0,1,0},{1,1,1}}));
+        //UpdateMatrix updateMatrix = new UpdateMatrix();
+        //System.out.println(updateMatrix.updateMatrix(new int[][]{{0,0,0},{0,1,0},{1,1,1}}));
+
+        //462. 最少移动次数使数组元素相等 II
+        MinMoves2 minMoves2 = new MinMoves2();
+        System.out.println(minMoves2.minMoves2(new int[]{1,2,3,11,55,145,246,256}));
 
         //System.out.println("[[0,0,0],[0,1,0],[0,0,0]]".replace("[","{").replace("]","}"));
     }
