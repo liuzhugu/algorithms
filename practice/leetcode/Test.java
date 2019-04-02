@@ -162,8 +162,14 @@ public class Test {
         //System.out.println(updateMatrix.updateMatrix(new int[][]{{0,0,0},{0,1,0},{1,1,1}}));
 
         //462. 最少移动次数使数组元素相等 II
-        MinMoves2 minMoves2 = new MinMoves2();
-        System.out.println(minMoves2.minMoves2(new int[]{1,2,3,11,55,145,246,256}));
+        //MinMoves2 minMoves2 = new MinMoves2();
+        //System.out.println(minMoves2.minMoves2(new int[]{1,2,3,11,55,145,246,256}));
+
+        //1007. 行相等的最少多米诺旋转
+        MinDominoRotations minDominoRotations = new MinDominoRotations();
+        System.out.println(minDominoRotations.minDominoRotations(
+                new int[]{3,5,1,2,3},new int[]{5,3,3,3,4}
+        ));
 
         //System.out.println("[[0,0,0],[0,1,0],[0,0,0]]".replace("[","{").replace("]","}"));
     }

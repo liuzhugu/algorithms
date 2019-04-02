@@ -1,9 +1,5 @@
 package practice.leetcode;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
 
 /**
  * Created by liuzhugu on 2019/03/28.
