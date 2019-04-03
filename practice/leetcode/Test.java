@@ -166,10 +166,12 @@ public class Test {
         //System.out.println(minMoves2.minMoves2(new int[]{1,2,3,11,55,145,246,256}));
 
         //1007. 行相等的最少多米诺旋转
-        MinDominoRotations minDominoRotations = new MinDominoRotations();
-        System.out.println(minDominoRotations.minDominoRotations(
-                new int[]{3,5,1,2,3},new int[]{5,3,3,3,4}
-        ));
+        //MinDominoRotations minDominoRotations = new MinDominoRotations();
+        //System.out.println(minDominoRotations.minDominoRotations(new int[]{3,5,1,2,3},new int[]{5,3,3,3,4}));
+
+        //33. 搜索旋转排序数组
+        Search search = new Search();
+        System.out.println(search.search(new int[]{5,1,2,3,4},1));
 
         //System.out.println("[[0,0,0],[0,1,0],[0,0,0]]".replace("[","{").replace("]","}"));
     }
