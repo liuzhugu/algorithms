@@ -174,14 +174,17 @@ public class Test {
         //System.out.println(search.search(new int[]{5,1,2,3,4},1));
 
         //971. 翻转二叉树以匹配先序遍历
-        FlipMatchVoyage flipMatchVoyage = new FlipMatchVoyage();
-        TreeNode root = new TreeNode(1);
+        //FlipMatchVoyage flipMatchVoyage = new FlipMatchVoyage();
+        //TreeNode root = new TreeNode(1);
 //        TreeNode left = new TreeNode(2);
 //        root.left =  left;
 //        TreeNode right = new TreeNode(3);
 //        root.right = right;
-        System.out.println(flipMatchVoyage.flipMatchVoyage(root,new int[]{1}));
+        //System.out.println(flipMatchVoyage.flipMatchVoyage(root,new int[]{1}));
 
+        //223. 矩形面积
+        ComputeArea computeArea = new ComputeArea();
+        System.out.println(computeArea.computeArea(-3, 0, 3, 4, 0, -1, 9, 2));
 
         //System.out.println("[[0,0,0],[0,1,0],[0,0,0]]".replace("[","{").replace("]","}"));
     }
