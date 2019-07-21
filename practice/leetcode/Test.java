@@ -183,8 +183,12 @@ public class Test {
         //System.out.println(flipMatchVoyage.flipMatchVoyage(root,new int[]{1}));
 
         //223. 矩形面积
-        ComputeArea computeArea = new ComputeArea();
-        System.out.println(computeArea.computeArea(-3, 0, 3, 4, 0, -1, 9, 2));
+        //ComputeArea computeArea = new ComputeArea();
+        //System.out.println(computeArea.computeArea(-3, 0, 3, 4, 0, -1, 9, 2));
+
+        //781. 森林中的兔子
+        NumRabbits numRabbits = new NumRabbits();
+        System.out.println(numRabbits.numRabbits(new int[]{0,0,1,1,1,1,1}));
 
         //System.out.println("[[0,0,0],[0,1,0],[0,0,0]]".replace("[","{").replace("]","}"));
     }
