@@ -187,8 +187,12 @@ public class Test {
         //System.out.println(computeArea.computeArea(-3, 0, 3, 4, 0, -1, 9, 2));
 
         //781. 森林中的兔子
-        NumRabbits numRabbits = new NumRabbits();
-        System.out.println(numRabbits.numRabbits(new int[]{0,0,1,1,1,1,1}));
+        //NumRabbits numRabbits = new NumRabbits();
+        //System.out.println(numRabbits.numRabbits(new int[]{0,0,1,1,1,1,1}));
+
+        //767. 重构字符串
+        ReorganizeString reorganizeString = new ReorganizeString();
+        System.out.println(reorganizeString.reorganizeString("bfrbs"));
 
         //System.out.println("[[0,0,0],[0,1,0],[0,0,0]]".replace("[","{").replace("]","}"));
     }
