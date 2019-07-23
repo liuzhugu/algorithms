@@ -191,8 +191,12 @@ public class Test {
         //System.out.println(numRabbits.numRabbits(new int[]{0,0,1,1,1,1,1}));
 
         //767. 重构字符串
-        ReorganizeString reorganizeString = new ReorganizeString();
-        System.out.println(reorganizeString.reorganizeString("bfrbs"));
+        //ReorganizeString reorganizeString = new ReorganizeString();
+        //System.out.println(reorganizeString.reorganizeString("bfrbs"));
+
+        //567. 字符串的排列
+        CheckInclusion checkInclusion = new CheckInclusion();
+        System.out.println(checkInclusion.checkInclusion("adc","dcda"));
 
         //System.out.println("[[0,0,0],[0,1,0],[0,0,0]]".replace("[","{").replace("]","}"));
     }
