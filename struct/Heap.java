@@ -28,7 +28,7 @@ public class Heap {
     }
     public Heap(int[] nums,boolean isMax){
         if(nums!=null||nums.length!=0){
-            heap=Arrays.copyOf(nums,nums.length);
+            heap= Arrays.copyOf(nums,nums.length);
             size=nums.length;
             //堆化
             headify();
@@ -120,7 +120,7 @@ public class Heap {
     public void siftUp(int index,int replace){
         heap[index]=replace;
         while(index>0){
-            int parent=index/2;
+            int parent = (index - 1) / 2;
             if(isMax){
                 if(heap[parent]<heap[index]) swap(index,parent);
             }else {

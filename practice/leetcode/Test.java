@@ -195,9 +195,43 @@ public class Test {
         //System.out.println(reorganizeString.reorganizeString("bfrbs"));
 
         //567. 字符串的排列
-        CheckInclusion checkInclusion = new CheckInclusion();
-        System.out.println(checkInclusion.checkInclusion("adc","dcda"));
+        //CheckInclusion checkInclusion = new CheckInclusion();
+        //System.out.println(checkInclusion.checkInclusion("adc","dcda"));
 
         //System.out.println("[[0,0,0],[0,1,0],[0,0,0]]".replace("[","{").replace("]","}"));
+
+        //1218. 最长定差子序列
+        //LongestSubsequence longestSubsequence = new LongestSubsequence();
+        //System.out.println(longestSubsequence.longestSubsequence(new int[]{3,4,-3,-2,-4},-5));
+
+        //658. 找到K个最接近的元素
+        //FindClosestElements findClosestElements = new FindClosestElements();
+        //System.out.println(findClosestElements.findClosestElements(new int[]{1,2,3,4,5},4,3));
+
+        //1019. 链表中的下一个更大节点
+//        NextLargerNodes nextLargerNodes = new NextLargerNodes();
+//        //[7,2,6,6,9,4,3]
+//        ListNode head = new ListNode(7);
+//        ListNode node1 = new ListNode(2);
+//        head.next = node1;
+//        ListNode node2 = new ListNode(6);
+//        node1.next = node2;
+//        ListNode node3 = new ListNode(6);
+//        node2.next = node3;
+//        ListNode node4 = new ListNode(9);
+//        node3.next = node4;
+//        ListNode node5 = new ListNode(4);
+//        node4.next = node5;
+//        ListNode node6 = new ListNode(3);
+//        node5.next = node6;
+//        System.out.println(nextLargerNodes.nextLargerNodes(head));
+
+        //886. 可能的二分法
+        PossibleBipartition possibleBipartition = new PossibleBipartition();
+        System.out.println(possibleBipartition.possibleBipartition(4,new int[][]{{1,2},{1,3},{2,4}}));
+
+
+        //String str = "[[4,7],[4,8],[2,8],[8,9],[1,6],[5,8],[1,2],[6,7],[3,10],[8,10],[1,5],[7,10],[1,10],[3,5],[3,6],[1,4],[3,9],[2,3],[1,9],[7,9],[2,7],[6,8],[5,7],[3,4]]";
+        //System.out.println(str.replace("[","{").replace("]","}"));
     }
 }
