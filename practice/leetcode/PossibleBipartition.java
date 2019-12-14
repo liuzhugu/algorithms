@@ -1,9 +1,7 @@
 package practice.leetcode;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 /**
  * Created by liuzhugu on 2019/12/11.
@@ -42,6 +40,7 @@ public class PossibleBipartition {
         }
         return true;
     }
+    //此处用树的好处是合并链表公共部分
     int find(int x) {
         //相等的话说明它就是根节点，否则往上追溯
         if (x != father[x])
