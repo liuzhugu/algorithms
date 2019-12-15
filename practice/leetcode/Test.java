@@ -3,7 +3,9 @@ package practice.leetcode;
 import struct.Heap;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 public class Test {
 
@@ -227,11 +229,91 @@ public class Test {
 //        System.out.println(nextLargerNodes.nextLargerNodes(head));
 
         //886. 可能的二分法
-        PossibleBipartition possibleBipartition = new PossibleBipartition();
-        System.out.println(possibleBipartition.possibleBipartition(4,new int[][]{{1,2},{1,3},{2,4}}));
+        //PossibleBipartition possibleBipartition = new PossibleBipartition();
+        //System.out.println(possibleBipartition.possibleBipartition(4,new int[][]{{1,2},{1,3},{2,4}}));
 
+        //813. 最大平均值和的分组
+        //LargestSumOfAverages largestSumOfAverages = new LargestSumOfAverages();
+        //System.out.println(largestSumOfAverages.largestSumOfAverages(new int[]{9,1,2,3,9},3));
+
+        //113. 路径总和 II
+        String line = "[1,-2,-3,1,3,-2,null,-1]";
+        PathSum pathSum = new PathSum();
+        TreeNode root = stringToTreeNode(line);
+        System.out.println(pathSum.pathSum(root,2));
 
         //String str = "[[4,7],[4,8],[2,8],[8,9],[1,6],[5,8],[1,2],[6,7],[3,10],[8,10],[1,5],[7,10],[1,10],[3,5],[3,6],[1,4],[3,9],[2,3],[1,9],[7,9],[2,7],[6,8],[5,7],[3,4]]";
         //System.out.println(str.replace("[","{").replace("]","}"));
+    }
+    public static TreeNode stringToTreeNode(String input) {
+        input = input.trim();
+        input = input.substring(1, input.length() - 1);
+        if (input.length() == 0) {
+            return null;
+        }
+
+        String[] parts = input.split(",");
+        String item = parts[0];
+        TreeNode root = new TreeNode(Integer.parseInt(item));
+        Queue<TreeNode> nodeQueue = new LinkedList<>();
+        nodeQueue.add(root);
+
+        int index = 1;
+        while(!nodeQueue.isEmpty()) {
+            TreeNode node = nodeQueue.remove();
+
+            if (index == parts.length) {
+                break;
+            }
+
+            item = parts[index++];
+            item = item.trim();
+            if (!item.equals("null")) {
+                int leftNumber = Integer.parseInt(item);
+                node.left = new TreeNode(leftNumber);
+                nodeQueue.add(node.left);
+            }
+
+            if (index == parts.length) {
+                break;
+            }
+
+            item = parts[index++];
+            item = item.trim();
+            if (!item.equals("null")) {
+                int rightNumber = Integer.parseInt(item);
+                node.right = new TreeNode(rightNumber);
+                nodeQueue.add(node.right);
+            }
+        }
+        return root;
+    }
+
+    public static String integerArrayListToString(List<Integer> nums, int length) {
+        if (length == 0) {
+            return "[]";
+        }
+
+        String result = "";
+        for(int index = 0; index < length; index++) {
+            Integer number = nums.get(index);
+            result += Integer.toString(number) + ", ";
+        }
+        return "[" + result.substring(0, result.length() - 2) + "]";
+    }
+
+    public static String integerArrayListToString(List<Integer> nums) {
+        return integerArrayListToString(nums, nums.size());
+    }
+
+    public static String int2dListToString(List<List<Integer>> nums) {
+        StringBuilder sb = new StringBuilder("[");
+        for (List<Integer> list: nums) {
+            sb.append(integerArrayListToString(list));
+            sb.append(",");
+        }
+
+        sb.setCharAt(sb.length() - 1, ']');
+        return sb.toString();
     }
 }
