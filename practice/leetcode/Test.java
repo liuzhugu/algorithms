@@ -1,11 +1,8 @@
 package practice.leetcode;
 
-import struct.Heap;
-
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
+import java.util.*;
 
 public class Test {
 
@@ -237,14 +234,27 @@ public class Test {
         //System.out.println(largestSumOfAverages.largestSumOfAverages(new int[]{9,1,2,3,9},3));
 
         //113. 路径总和 II
-        String line = "[1,-2,-3,1,3,-2,null,-1]";
-        PathSum pathSum = new PathSum();
-        TreeNode root = stringToTreeNode(line);
-        System.out.println(pathSum.pathSum(root,2));
+//        String line = "[1,-2,-3,1,3,-2,null,-1]";
+//        PathSum pathSum = new PathSum();
+//        TreeNode root = stringToTreeNode(line);
+//        System.out.println(pathSum.pathSum(root,2));
 
-        //String str = "[[4,7],[4,8],[2,8],[8,9],[1,6],[5,8],[1,2],[6,7],[3,10],[8,10],[1,5],[7,10],[1,10],[3,5],[3,6],[1,4],[3,9],[2,3],[1,9],[7,9],[2,7],[6,8],[5,7],[3,4]]";
-        //System.out.println(str.replace("[","{").replace("]","}"));
+        //554. 砖墙
+        LeastBricks leastBricks = new LeastBricks();
+        List<List<Integer>> lists = new ArrayList<>();
+        lists.add(Arrays.asList(new Integer[]{100000000}));
+        lists.add(Arrays.asList(new Integer[]{100000000}));
+        lists.add(Arrays.asList(new Integer[]{100000000}));
+//        lists.add(Arrays.asList(new Integer[]{2,4}));
+//        lists.add(Arrays.asList(new Integer[]{3,1,2}));
+//        lists.add(Arrays.asList(new Integer[]{1,3,1,1}));
+        System.out.println(leastBricks.leastBricks(lists));
+
+        String str = "[[1,2,2,1],[3,1,2],[1,3,2],[2,4],[3,1,2],[1,3,1,1]]";
+        System.out.println(str.replace("[","{").replace("]","}"));
     }
+
+
     public static TreeNode stringToTreeNode(String input) {
         input = input.trim();
         input = input.substring(1, input.length() - 1);
@@ -316,4 +326,5 @@ public class Test {
         sb.setCharAt(sb.length() - 1, ']');
         return sb.toString();
     }
+
 }
