@@ -251,10 +251,14 @@ public class Test {
 //        System.out.println(leastBricks.leastBricks(lists));
 
         //1073. 负二进制数相加
-        AddNegabinary addNegabinary = new AddNegabinary();
-        System.out.println(addNegabinary.addNegabinary(new int[]{1,1,0,1},new int[]{1}));
+        //AddNegabinary addNegabinary = new AddNegabinary();
+        //System.out.println(addNegabinary.addNegabinary(new int[]{1,1,0,1},new int[]{1}));
 
-        //String str = "[[1,2,2,1],[3,1,2],[1,3,2],[2,4],[3,1,2],[1,3,1,1]]";
+        //785. 判断二分图
+        IsBipartite isBipartite = new IsBipartite();
+        System.out.println(isBipartite.isBipartite(new int[][]{{1,3}, {0,2}, {1,3}, {0,2}}));
+
+        //String str = "[[1,3], [0,2], [1,3], [0,2]]";
         //System.out.println(str.replace("[","{").replace("]","}"));
     }
 
