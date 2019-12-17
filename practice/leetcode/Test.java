@@ -240,18 +240,22 @@ public class Test {
 //        System.out.println(pathSum.pathSum(root,2));
 
         //554. 砖墙
-        LeastBricks leastBricks = new LeastBricks();
-        List<List<Integer>> lists = new ArrayList<>();
-        lists.add(Arrays.asList(new Integer[]{100000000}));
-        lists.add(Arrays.asList(new Integer[]{100000000}));
-        lists.add(Arrays.asList(new Integer[]{100000000}));
+//        LeastBricks leastBricks = new LeastBricks();
+//        List<List<Integer>> lists = new ArrayList<>();
+//        lists.add(Arrays.asList(new Integer[]{100000000}));
+//        lists.add(Arrays.asList(new Integer[]{100000000}));
+//        lists.add(Arrays.asList(new Integer[]{100000000}));
 //        lists.add(Arrays.asList(new Integer[]{2,4}));
 //        lists.add(Arrays.asList(new Integer[]{3,1,2}));
 //        lists.add(Arrays.asList(new Integer[]{1,3,1,1}));
-        System.out.println(leastBricks.leastBricks(lists));
+//        System.out.println(leastBricks.leastBricks(lists));
 
-        String str = "[[1,2,2,1],[3,1,2],[1,3,2],[2,4],[3,1,2],[1,3,1,1]]";
-        System.out.println(str.replace("[","{").replace("]","}"));
+        //1073. 负二进制数相加
+        AddNegabinary addNegabinary = new AddNegabinary();
+        System.out.println(addNegabinary.addNegabinary(new int[]{1,1,0,1},new int[]{1}));
+
+        //String str = "[[1,2,2,1],[3,1,2],[1,3,2],[2,4],[3,1,2],[1,3,1,1]]";
+        //System.out.println(str.replace("[","{").replace("]","}"));
     }
 
 
