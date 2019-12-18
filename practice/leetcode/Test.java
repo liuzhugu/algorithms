@@ -255,8 +255,12 @@ public class Test {
         //System.out.println(addNegabinary.addNegabinary(new int[]{1,1,0,1},new int[]{1}));
 
         //785. 判断二分图
-        IsBipartite isBipartite = new IsBipartite();
-        System.out.println(isBipartite.isBipartite(new int[][]{{1,3}, {0,2}, {1,3}, {0,2}}));
+        //IsBipartite isBipartite = new IsBipartite();
+        //System.out.println(isBipartite.isBipartite(new int[][]{{1,3}, {0,2}, {1,3}, {0,2}}));
+
+        //1023. 驼峰式匹配
+        CamelMatch camelMatch = new CamelMatch();
+        System.out.println(camelMatch.camelMatch(new String[]{"FooBar","FooBarTest","FootBall","FrameBuffer","ForceFeedBack"},"FB"));
 
         //String str = "[[1,3], [0,2], [1,3], [0,2]]";
         //System.out.println(str.replace("[","{").replace("]","}"));
