@@ -259,11 +259,14 @@ public class Test {
         //System.out.println(isBipartite.isBipartite(new int[][]{{1,3}, {0,2}, {1,3}, {0,2}}));
 
         //1023. 驼峰式匹配
-        CamelMatch camelMatch = new CamelMatch();
-        System.out.println(camelMatch.camelMatch(new String[]{"FooBar","FooBarTest","FootBall","FrameBuffer","ForceFeedBack"},"FB"));
+        //CamelMatch camelMatch = new CamelMatch();
+        //System.out.println(camelMatch.camelMatch(new String[]{"FooBar","FooBarTest","FootBall","FrameBuffer","ForceFeedBack"},"FB"));
+
+        System.out.println(new QueryString().queryString("0110",3));
 
         //String str = "[[1,3], [0,2], [1,3], [0,2]]";
         //System.out.println(str.replace("[","{").replace("]","}"));
+
     }
 
 
