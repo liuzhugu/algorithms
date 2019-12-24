@@ -262,7 +262,9 @@ public class Test {
         //CamelMatch camelMatch = new CamelMatch();
         //System.out.println(camelMatch.camelMatch(new String[]{"FooBar","FooBarTest","FootBall","FrameBuffer","ForceFeedBack"},"FB"));
 
-        System.out.println(new QueryString().queryString("0110",3));
+        //518. 零钱兑换 II
+        Change change = new Change();
+        System.out.println(change.change(3,new int[]{2}));
 
         //String str = "[[1,3], [0,2], [1,3], [0,2]]";
         //System.out.println(str.replace("[","{").replace("]","}"));
