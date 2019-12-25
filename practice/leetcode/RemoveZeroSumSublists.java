@@ -24,6 +24,7 @@ public class RemoveZeroSumSublists {
             map.put(sum,cur);
             cur = cur.next;
         }
+
         cur = pre;
         sum = 0;
         //再遍历求和
