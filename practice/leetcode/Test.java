@@ -266,6 +266,7 @@ public class Test {
         Change change = new Change();
         System.out.println(change.change(3,new int[]{2}));
 
+
         //String str = "[[1,3], [0,2], [1,3], [0,2]]";
         //System.out.println(str.replace("[","{").replace("]","}"));
 
