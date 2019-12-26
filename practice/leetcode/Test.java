@@ -263,12 +263,14 @@ public class Test {
         //System.out.println(camelMatch.camelMatch(new String[]{"FooBar","FooBarTest","FootBall","FrameBuffer","ForceFeedBack"},"FB"));
 
         //518. 零钱兑换 II
-        Change change = new Change();
-        System.out.println(change.change(3,new int[]{2}));
+        //Change change = new Change();
+        //System.out.println(change.change(3,new int[]{2}));
+
+        //1288. 删除被覆盖区间
+//        RemoveCoveredIntervals removeCoveredIntervals = new RemoveCoveredIntervals();
 
 
-        //String str = "[[1,3], [0,2], [1,3], [0,2]]";
-        //System.out.println(str.replace("[","{").replace("]","}"));
+        //System.out.println(str.replace(" ","").replace("[","{").replace("]","}").replace("\n",""));
 
     }
 
