@@ -4,6 +4,13 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Created by liuzhugu on 2019/12/27.
+ * 1288. 删除被覆盖区间
+ * 给你一个区间列表，请你删除列表中被其他区间所覆盖的区间。
+ * 只有当 c <= a 且 b <= d 时，我们才认为区间 [a,b) 被区间 [c,d) 覆盖。
+ * 在完成所有删除操作后，请你返回列表中剩余区间的数目。
+ */
 public class RemoveCoveredIntervals {
     public int removeCoveredIntervals(int[][] intervals) {
         int[] starts = new int[intervals.length];

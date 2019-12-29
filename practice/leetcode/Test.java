@@ -269,6 +269,20 @@ public class Test {
         //1288. 删除被覆盖区间
 //        RemoveCoveredIntervals removeCoveredIntervals = new RemoveCoveredIntervals();
 
+        //1043. 分隔数组以得到最大和
+//        MaxSumAfterPartitioning maxSumAfterPartitioning = new MaxSumAfterPartitioning();
+//        System.out.println(maxSumAfterPartitioning.maxSumAfterPartitioning(new int[]{
+//                1,15,7,9,2,5,10
+//        },3));
+
+        //1011. 在 D 天内送达包裹的能力
+        //ShipWithinDays shipWithinDays = new ShipWithinDays();
+        //System.out.println(shipWithinDays.shipWithinDays(new int[]{1,2,3,4,5,6,7,8,9,10},5));
+
+        //524. 通过删除字母匹配到字典里最长单词
+        FindLongestWord findLongestWord = new FindLongestWord();
+        String[] strings = new String[]{"ale","apple","monkey","plea"};
+        System.out.println(findLongestWord.findLongestWord("abpcplea",Arrays.asList(strings)));
 
         //System.out.println(str.replace(" ","").replace("[","{").replace("]","}").replace("\n",""));
 
