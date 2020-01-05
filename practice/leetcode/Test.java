@@ -289,8 +289,12 @@ public class Test {
         //System.out.println(deleteDuplicates.deleteDuplicates(stringToListNode("[1,1,1,1,1]")));
 
         //450. 删除二叉搜索树中的节点
-        DeleteTreeNode deleteTreeNode = new DeleteTreeNode();
-        System.out.println(deleteTreeNode.deleteNode(stringToTreeNode("[5,3,6,2,4,null,7]"),3));
+        //DeleteTreeNode deleteTreeNode = new DeleteTreeNode();
+        //System.out.println(deleteTreeNode.deleteNode(stringToTreeNode("[5,3,6,2,4,null,7]"),3));
+
+        //143. 重排链表
+        ReorderList reorderList = new ReorderList();
+        reorderList.reorderList(stringToListNode("[1]"));
 
         //System.out.println(str.replace(" ","").replace("[","{").replace("]","}").replace("\n",""));
 
