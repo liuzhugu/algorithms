@@ -293,8 +293,19 @@ public class Test {
         //System.out.println(deleteTreeNode.deleteNode(stringToTreeNode("[5,3,6,2,4,null,7]"),3));
 
         //143. 重排链表
-        ReorderList reorderList = new ReorderList();
-        reorderList.reorderList(stringToListNode("[1]"));
+        //ReorderList reorderList = new ReorderList();
+        //reorderList.reorderList(stringToListNode("[1]"));
+
+        //919. 完全二叉树插入器
+//        CBTInserter cbtInserter = new CBTInserter(stringToTreeNode("[1,2,3,4,5,6]"));
+//        System.out.println(cbtInserter.insert(7));
+//        System.out.println(cbtInserter.insert(8));
+//        System.out.println(cbtInserter.insert(9));
+//        cbtInserter.get_root();
+
+        //743. 网络延迟时间
+        NetworkDelayTime networkDelayTime = new NetworkDelayTime();
+        System.out.println(networkDelayTime.networkDelayTime(new int[][]{{2,1,1},{2,3,1},{3,4,1}},4,2));
 
         //System.out.println(str.replace(" ","").replace("[","{").replace("]","}").replace("\n",""));
 
