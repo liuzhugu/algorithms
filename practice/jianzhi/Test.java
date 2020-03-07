@@ -20,7 +20,7 @@ public class Test {
         //SingleNumbers singleNumbers = new SingleNumbers();
         //System.out.println(singleNumbers.singleNumbers(new int[]{4,1,4,6}));
 
-        IsNumber isNumber = new IsNumber();
-        System.out.println(isNumber.isNumber("3."));
+        HammingWeight hammingWeight = new HammingWeight();
+        System.out.println(hammingWeight.hammingWeight(1));
     }
 }
