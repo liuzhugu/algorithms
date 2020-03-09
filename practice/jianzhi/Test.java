@@ -20,7 +20,14 @@ public class Test {
         //SingleNumbers singleNumbers = new SingleNumbers();
         //System.out.println(singleNumbers.singleNumbers(new int[]{4,1,4,6}));
 
-        HammingWeight hammingWeight = new HammingWeight();
-        System.out.println(hammingWeight.hammingWeight(1));
+        //HammingWeight hammingWeight = new HammingWeight();
+        //System.out.println(hammingWeight.hammingWeight(1));
+
+        //MinArray minArray = new MinArray();
+        //System.out.println(minArray.minArray(new int[]{1,3,3}));
+
+        Codec codec = new Codec();
+        TreeNode treeNode = codec.deserialize("[]");
+        System.out.println(codec.serialize(treeNode));
     }
 }

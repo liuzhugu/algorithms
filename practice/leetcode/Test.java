@@ -304,8 +304,20 @@ public class Test {
 //        cbtInserter.get_root();
 
         //743. 网络延迟时间
-        NetworkDelayTime networkDelayTime = new NetworkDelayTime();
-        System.out.println(networkDelayTime.networkDelayTime(new int[][]{{2,1,1},{2,3,1},{3,4,1}},4,2));
+        //NetworkDelayTime networkDelayTime = new NetworkDelayTime();
+        //System.out.println(networkDelayTime.networkDelayTime(new int[][]{{2,1,1},{2,3,1},{3,4,1}},4,2));
+
+        //1302. 层数最深叶子节点的和
+        //DeepestLeavesSum deepestLeavesSum = new DeepestLeavesSum();
+        //System.out.println(deepestLeavesSum.deepestLeavesSum(stringToTreeNode("[1,2,3,4,5,null,6,7,null,null,null,null,8]")));
+
+        //322. 零钱兑换
+        //CoinChange coinChange = new CoinChange();
+        //System.out.println(coinChange.coinChange(new int[]{1,2,5},11));
+
+        //121. 买卖股票的最佳时机
+        MaxProfit maxProfit = new MaxProfit();
+        System.out.println(maxProfit.maxProfit(new int[]{7,1,5,3,6,4}));
 
         //System.out.println(str.replace(" ","").replace("[","{").replace("]","}").replace("\n",""));
 
