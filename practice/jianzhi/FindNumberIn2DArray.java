@@ -8,16 +8,17 @@ package practice.jianzhi;
  */
 public class FindNumberIn2DArray {
 
+    //从左到右递增  从上到下递增
     public boolean findNumberIn2DArray(int[][] matrix, int target) {
-        int i = 0,j = 0;
-        while (i < matrix.length && j < matrix[0].length) {
-            if (matrix[i][j] == target) {
-                return true;
-            }
-            if (j + 1 < matrix[0].length && matrix[i][j + 1] <= target) {
-                j ++;
-            } else {
+        //从右上角开始
+        int i = 0,j = matrix[0].length;
+        while (i < matrix.length && j >= 0) {
+            if (matrix[i][j] > target) {
+                j --;
+            } else if (matrix[i][j] < target) {
                 i ++;
+            } else {
+                return true;
             }
         }
         return false;
