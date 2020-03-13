@@ -2,6 +2,9 @@ package practice.jianzhi;
 
 import practice.leetcode.CanThreePartsEqualSum;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class Test {
     public static void main(String[] args) {
 //        ReverseWords reverseWords = new ReverseWords();
@@ -54,7 +57,56 @@ public class Test {
         //CanThreePartsEqualSum canThreePartsEqualSum = new CanThreePartsEqualSum();
         //System.out.println(canThreePartsEqualSum.canThreePartsEqualSum(new int[]{1,-1,1,-1}));
 
-        NthUglyNumber nthUglyNumber = new NthUglyNumber();
-        System.out.println(nthUglyNumber.nthUglyNumber(10));
+        //NthUglyNumber nthUglyNumber = new NthUglyNumber();
+        //System.out.println(nthUglyNumber.nthUglyNumber(10));
+
+        //NumWays numWays = new NumWays();
+        //System.out.println(numWays.numWays(100));
+
+        IsSymmetric isSymmetric = new IsSymmetric();
+        System.out.println(isSymmetric.isSymmetric(stringToTreeNode("[2,3,3,4,5,5,4,null,null,8,9,9,8]")));
+    }
+    public static TreeNode stringToTreeNode(String input) {
+        input = input.trim();
+        input = input.substring(1, input.length() - 1);
+        if (input.length() == 0) {
+            return null;
+        }
+
+        String[] parts = input.split(",");
+        String item = parts[0];
+        TreeNode root = new TreeNode(Integer.parseInt(item));
+        Queue<TreeNode> nodeQueue = new LinkedList<>();
+        nodeQueue.add(root);
+
+        int index = 1;
+        while(!nodeQueue.isEmpty()) {
+            TreeNode node = nodeQueue.remove();
+
+            if (index == parts.length) {
+                break;
+            }
+
+            item = parts[index++];
+            item = item.trim();
+            if (!item.equals("null")) {
+                int leftNumber = Integer.parseInt(item);
+                node.left = new TreeNode(leftNumber);
+                nodeQueue.add(node.left);
+            }
+
+            if (index == parts.length) {
+                break;
+            }
+
+            item = parts[index++];
+            item = item.trim();
+            if (!item.equals("null")) {
+                int rightNumber = Integer.parseInt(item);
+                node.right = new TreeNode(rightNumber);
+                nodeQueue.add(node.right);
+            }
+        }
+        return root;
     }
 }
