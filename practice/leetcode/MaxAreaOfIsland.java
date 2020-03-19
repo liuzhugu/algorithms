@@ -10,25 +10,19 @@ package practice.leetcode;
  * 岛屿只能包含水平或垂直的四个方向的‘1’。
  */
 public class MaxAreaOfIsland {
-    boolean arrive[][];
     int max = 0;
     int temp = 0;
-    private boolean[][] init(int m,int n) {
-        arrive = new boolean[m][n];
-        return arrive;
-    }
+
     public int maxAreaOfIsland(int[][] grid) {
         if (grid == null || grid.length == 0) {
             return 0;
         }
         int m = grid.length,n = grid[0].length;
-        arrive = init(m,n);
         for (int i = 0;i < m;i ++) {
             for (int j = 0;j < n;j ++) {
                 if (grid[i][j] == 1) {
                     //从该点开始向四周探索
                     //设置全局变量,可以避免在递归中带来带去,但记得重置
-                    arrive = init(m,n);
                     dfs(i,j,m,n,0,grid);
                     if (temp > max) {
                         max = temp;
@@ -40,17 +34,21 @@ public class MaxAreaOfIsland {
         return max;
     }
     private void dfs(int i,int j,int m,int n,int area,int[][] grid) {
-        if (i < 0 || j < 0 || i >= m || j >= n || arrive[i][j] == true || grid[i][j] == 0) {
+        if (i < 0 || j < 0 || i >= m || j >= n ||  grid[i][j] == 0) {
             return;
         }
         temp ++;
-        arrive[i][j] = true;
+        grid[i][j] = 0;
         dfs(i - 1,j,m,n,area,grid);
         dfs(i + 1,j,m,n,area,grid);
         dfs(i,j - 1,m,n,area,grid);
         dfs(i,j + 1,m,n,area,grid);
 
     }
+
+
+
+
     //不是单向的
 //    public int maxAreaOfIsland(int[][] grid) {
 //        if (grid == null || grid.length == 0) {
