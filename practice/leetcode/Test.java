@@ -316,11 +316,18 @@ public class Test {
         //System.out.println(coinChange.coinChange(new int[]{1,2,5},11));
 
         //121. 买卖股票的最佳时机
-        MaxProfit maxProfit = new MaxProfit();
-        System.out.println(maxProfit.maxProfit(new int[]{7,1,5,3,6,4}));
+        //MaxProfit maxProfit = new MaxProfit();
+        //System.out.println(maxProfit.maxProfit(new int[]{7,1,5,3,6,4}));
+
+        //945. 使数组唯一的最小增量
+        //MinIncrementForUnique minIncrementForUnique = new MinIncrementForUnique();
+        //System.out.println(minIncrementForUnique.minIncrementForUnique(new int[]{1,1,1,5,6}));
 
         //System.out.println(str.replace(" ","").replace("[","{").replace("]","}").replace("\n",""));
 
+        //876. 链表的中间结点
+        MiddleNode middleNode = new MiddleNode();
+        System.out.println(middleNode.middleNode(stringToListNode("[1,2,3,4,5,6]")));
     }
 
 

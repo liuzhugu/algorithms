@@ -63,9 +63,18 @@ public class Test {
         //NumWays numWays = new NumWays();
         //System.out.println(numWays.numWays(100));
 
-        IsSymmetric isSymmetric = new IsSymmetric();
-        System.out.println(isSymmetric.isSymmetric(stringToTreeNode("[2,3,3,4,5,5,4,null,null,8,9,9,8]")));
+        //IsSymmetric isSymmetric = new IsSymmetric();
+        //System.out.println(isSymmetric.isSymmetric(stringToTreeNode("[2,3,3,4,5,5,4,null,null,8,9,9,8]")));
+
+        //面试题67. 把字符串转换成整数
+        //StrToInt strToInt = new StrToInt();
+        //System.out.println(strToInt.strToInt("   -42"));
+
+        //面试题 17.16. 按摩师
+        Massage massage = new Massage();
+        System.out.println(massage.massage(new int[]{2,1,4,5,3,1,1,3}));
     }
+
     public static TreeNode stringToTreeNode(String input) {
         input = input.trim();
         input = input.substring(1, input.length() - 1);
