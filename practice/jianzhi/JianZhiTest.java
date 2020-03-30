@@ -1,11 +1,10 @@
 package practice.jianzhi;
 
-import practice.leetcode.CanThreePartsEqualSum;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Test {
+public class JianZhiTest {
     public static void main(String[] args) {
 //        ReverseWords reverseWords = new ReverseWords();
 //        System.out.println(reverseWords.reverseWords("the sky is blue!"));
@@ -71,8 +70,12 @@ public class Test {
         //System.out.println(strToInt.strToInt("   -42"));
 
         //面试题 17.16. 按摩师
-        Massage massage = new Massage();
-        System.out.println(massage.massage(new int[]{2,1,4,5,3,1,1,3}));
+        //Massage massage = new Massage();
+        //System.out.println(massage.massage(new int[]{2,1,4,5,3,1,1,3}));
+
+        //面试题62. 圆圈中最后剩下的数字
+        LastRemaining lastRemaining = new LastRemaining();
+        System.out.println(lastRemaining.lastRemaining(10,3));
     }
 
     public static TreeNode stringToTreeNode(String input) {

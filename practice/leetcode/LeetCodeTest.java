@@ -4,7 +4,7 @@ import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import java.util.*;
 
-public class Test {
+public class LeetCodeTest {
 
     public static void main(String[] args) {
 //        //677 键值映射
@@ -326,8 +326,26 @@ public class Test {
         //System.out.println(str.replace(" ","").replace("[","{").replace("]","}").replace("\n",""));
 
         //876. 链表的中间结点
-        MiddleNode middleNode = new MiddleNode();
-        System.out.println(middleNode.middleNode(stringToListNode("[1,2,3,4,5,6]")));
+        //MiddleNode middleNode = new MiddleNode();
+        //System.out.println(middleNode.middleNode(stringToListNode("[1,2,3,4,5,6]")));
+
+        //892. 三维形体的表面积
+        //SurfaceArea surfaceArea = new SurfaceArea();
+        //System.out.println(surfaceArea.surfaceArea(new int[][]{{1,0},{0,2}}));
+
+        //914. 卡牌分组
+        //HasGroupsSizeX hasGroupsSizeX = new HasGroupsSizeX();
+        //System.out.println(hasGroupsSizeX.hasGroupsSizeX(new int[]{1,1,1,2,2,2,3,3}));
+
+        //820. 单词的压缩编码
+        //MinimumLengthEncoding minimumLengthEncoding = new MinimumLengthEncoding();
+        //System.out.println(minimumLengthEncoding.minimumLengthEncoding(new String[]{"time", "me", "bell","abell"}));
+
+        //1162. 地图分析
+        //MaxDistance maxDistance = new MaxDistance();
+        //System.out.println(maxDistance.maxDistance(new int[][]{{0,0,1,1,1},{0,1,1,0,0},{0,0,1,1,0},{1,0,0,0,0},{1,1,0,0,1}}));
+
+        //
     }
 
 
