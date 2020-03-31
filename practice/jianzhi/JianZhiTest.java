@@ -74,8 +74,10 @@ public class JianZhiTest {
         //System.out.println(massage.massage(new int[]{2,1,4,5,3,1,1,3}));
 
         //面试题62. 圆圈中最后剩下的数字
-        LastRemaining lastRemaining = new LastRemaining();
-        System.out.println(lastRemaining.lastRemaining(10,3));
+        //LastRemaining lastRemaining = new LastRemaining();
+        //System.out.println(lastRemaining.lastRemaining(10,3));
+
+        //
     }
 
     public static TreeNode stringToTreeNode(String input) {
