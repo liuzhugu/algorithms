@@ -77,7 +77,9 @@ public class JianZhiTest {
         //LastRemaining lastRemaining = new LastRemaining();
         //System.out.println(lastRemaining.lastRemaining(10,3));
 
-        //
+        //面试题60. n个骰子的点数
+        TwoSum twoSum = new TwoSum();
+        System.out.println(twoSum.twoSum(2));
     }
 
     public static TreeNode stringToTreeNode(String input) {
