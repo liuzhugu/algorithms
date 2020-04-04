@@ -346,8 +346,12 @@ public class LeetCodeTest {
         //System.out.println(maxDistance.maxDistance(new int[][]{{0,0,1,1,1},{0,1,1,0,0},{0,0,1,1,0},{1,0,0,0,0},{1,1,0,0,1}}));
 
         //912. 排序数组
-        SortArray sortArray = new SortArray();
-        System.out.println(sortArray.sortArray(new int[]{5,2,3,1,4,0,6,7,8,-1}));
+        //SortArray sortArray = new SortArray();
+        //System.out.println(sortArray.sortArray(new int[]{5,2,3,1,4,0,6,7,8,-1}));
+
+        //42. 接雨水
+        Trap trap = new Trap();
+        System.out.println(trap.trap(new int[]{5,4,3,0,0,4,5}));
     }
 
 
