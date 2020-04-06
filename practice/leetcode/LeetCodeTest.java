@@ -350,8 +350,25 @@ public class LeetCodeTest {
         //System.out.println(sortArray.sortArray(new int[]{5,2,3,1,4,0,6,7,8,-1}));
 
         //42. 接雨水
-        Trap trap = new Trap();
-        System.out.println(trap.trap(new int[]{5,4,3,0,0,4,5}));
+        //Trap trap = new Trap();
+        //System.out.println(trap.trap(new int[]{5,4,3,0,0,4,5}));
+
+        //460. LFU缓存
+//        LFUCache cache = new LFUCache( 2 /* capacity (缓存容量) */ );
+//        cache.put(1, 1);
+//        cache.put(2, 2);
+//        cache.get(1);       // 返回 1
+//        cache.put(3, 3);    // 去除 key 2
+//        cache.get(2);       // 返回 -1 (未找到key 2)
+//        cache.get(3);       // 返回 3
+//        cache.put(4, 4);    // 去除 key 1
+//        cache.get(1);       // 返回 -1 (未找到 key 1)
+//        cache.get(3);       // 返回 3
+//        cache.get(4);       // 返回 4
+
+        //72. 编辑距离
+        MinDistance minDistance = new MinDistance();
+        System.out.println(minDistance.minDistance("horse","ros"));
     }
 
 
