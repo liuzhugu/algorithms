@@ -367,8 +367,10 @@ public class LeetCodeTest {
 //        cache.get(4);       // 返回 4
 
         //72. 编辑距离
-        MinDistance minDistance = new MinDistance();
-        System.out.println(minDistance.minDistance("horse","ros"));
+        //MinDistance minDistance = new MinDistance();
+        //System.out.println(minDistance.minDistance("horse","ros"));
+
+        //
     }
 
 

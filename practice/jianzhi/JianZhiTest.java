@@ -78,8 +78,12 @@ public class JianZhiTest {
         //System.out.println(lastRemaining.lastRemaining(10,3));
 
         //面试题60. n个骰子的点数
-        TwoSum twoSum = new TwoSum();
-        System.out.println(twoSum.twoSum(2));
+        //TwoSum twoSum = new TwoSum();
+        //System.out.println(twoSum.twoSum(2));
+
+        //面试题 01.07. 旋转矩阵
+        Rotate rotate = new Rotate();
+        rotate.rotate(new int[][]{{1,2,3},{4,5,6},{7,8,9}});
     }
 
     public static TreeNode stringToTreeNode(String input) {
