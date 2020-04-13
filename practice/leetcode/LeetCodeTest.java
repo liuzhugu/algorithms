@@ -370,7 +370,21 @@ public class LeetCodeTest {
         //MinDistance minDistance = new MinDistance();
         //System.out.println(minDistance.minDistance("horse","ros"));
 
-        //
+        //355. 设计推特
+        Twitter twitter = new Twitter();
+
+        // 用户1发送了一条新推文 (用户id = 1, 推文id = 5).
+        twitter.postTweet(1, 5);
+
+        // 用户1关注了用户2.
+        twitter.follow(1, 1);
+
+        // 用户1取消关注了用户2.
+        twitter.unfollow(1, 1);
+
+        // 用户1的获取推文应当返回一个列表，其中包含一个id为5的推文.
+        // 因为用户1已经不再关注用户2.
+        twitter.getNewsFeed(1);
     }
 
 

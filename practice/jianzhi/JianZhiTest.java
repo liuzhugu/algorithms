@@ -82,8 +82,16 @@ public class JianZhiTest {
         //System.out.println(twoSum.twoSum(2));
 
         //面试题 01.07. 旋转矩阵
-        Rotate rotate = new Rotate();
-        rotate.rotate(new int[][]{{1,2,3},{4,5,6},{7,8,9}});
+        //Rotate rotate = new Rotate();
+        //rotate.rotate(new int[][]{{1,2,3},{4,5,6},{7,8,9}});
+
+        //面试题51. 数组中的逆序对
+        //ReversePairs reversePairs = new ReversePairs();
+        //System.out.println(reversePairs.reversePairs(new int[]{7,5,6,4}));
+
+        //面试题51. 数组中的逆序对
+        ReversePairs reversePairs = new ReversePairs();
+        System.out.println(reversePairs.reversePairs(new int[]{7,5,6,4,1,3,4}));
     }
 
     public static TreeNode stringToTreeNode(String input) {
