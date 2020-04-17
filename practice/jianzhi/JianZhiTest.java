@@ -98,9 +98,12 @@ public class JianZhiTest {
         //System.out.println(findNthDigit.findNthDigit(2147483646));
 
         //面试题61. 扑克牌中的顺子
-        IsStraight isStraight = new IsStraight();
-        System.out.println(isStraight.isStraight(new int[]{0,12,11,11,0}));
+        //IsStraight isStraight = new IsStraight();
+        //System.out.println(isStraight.isStraight(new int[]{0,12,11,11,0}));
 
+        //面试题14- II. 剪绳子 II
+        CuttingRope cuttingRope = new CuttingRope();
+        System.out.println(cuttingRope.cuttingRope(1000));
     }
 
     public static TreeNode stringToTreeNode(String input) {

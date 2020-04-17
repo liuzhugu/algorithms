@@ -6,7 +6,7 @@ package practice.leetcode;
  */
 public class IntegerBreak {
     public int integerBreak(int n) {
-        int end = n / 3 >= 2 ? n / 3 : 2;
+        int end = n / 3 >= 2 ? (n + 1) / 3 : 2;
         int ans = 0;
         for (int i = 2;i <= end;i ++) {
             int remainder = n % i;
