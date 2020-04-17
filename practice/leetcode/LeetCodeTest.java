@@ -371,20 +371,28 @@ public class LeetCodeTest {
         //System.out.println(minDistance.minDistance("horse","ros"));
 
         //355. 设计推特
-        Twitter twitter = new Twitter();
+//        Twitter twitter = new Twitter();
+//        // 用户1发送了一条新推文 (用户id = 1, 推文id = 5).
+//        twitter.postTweet(1, 5);
+//        // 用户1关注了用户2.
+//        twitter.follow(1, 1);
+//        // 用户1取消关注了用户2.
+//        twitter.unfollow(1, 1);
+//        // 用户1的获取推文应当返回一个列表，其中包含一个id为5的推文.
+//        // 因为用户1已经不再关注用户2.
+//        twitter.getNewsFeed(1);
 
-        // 用户1发送了一条新推文 (用户id = 1, 推文id = 5).
-        twitter.postTweet(1, 5);
+        //542. 01 矩阵
+        //UpdateMatrix updateMatrix = new UpdateMatrix();
+        //System.out.println(updateMatrix.updateMatrix(new int[][]{{0,0,0},{0,1,0},{0,0,0}}));
 
-        // 用户1关注了用户2.
-        twitter.follow(1, 1);
+        //56. 合并区间
+        //Merge merge = new Merge();
+        //System.out.println(merge.merge(new int[][]{{1,3},{2,6},{8,10},{15,18}}));
 
-        // 用户1取消关注了用户2.
-        twitter.unfollow(1, 1);
-
-        // 用户1的获取推文应当返回一个列表，其中包含一个id为5的推文.
-        // 因为用户1已经不再关注用户2.
-        twitter.getNewsFeed(1);
+        //
+        Jump jump = new Jump();
+        System.out.println(jump.jump(new int[]{2,3,1,1,4}));
     }
 
 
