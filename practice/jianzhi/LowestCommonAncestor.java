@@ -18,6 +18,7 @@ public class LowestCommonAncestor {
         preOrde(new ArrayList<>(),root,p,q);
         TreeNode result = null;
         int index = 0;
+        //最后一个相等的地方就是两者公共的最近父节点
         while (index < first.size() && index < second.size()) {
             if (first.get(index).val == second.get(index).val) {
                 result = first.get(index);
@@ -30,6 +31,7 @@ public class LowestCommonAncestor {
     }
     void preOrde(List<TreeNode> list,TreeNode root,TreeNode p,TreeNode q) {
         list.add(root);
+        //找到跟节点到这两个节点的路径
         if (root.val == p.val) {
             first = new ArrayList<>(list);
         }

@@ -90,8 +90,17 @@ public class JianZhiTest {
         //System.out.println(reversePairs.reversePairs(new int[]{7,5,6,4}));
 
         //面试题51. 数组中的逆序对
-        ReversePairs reversePairs = new ReversePairs();
-        System.out.println(reversePairs.reversePairs(new int[]{7,5,6,4,1,3,4}));
+        //ReversePairs reversePairs = new ReversePairs();
+        //System.out.println(reversePairs.reversePairs(new int[]{7,5,6,4,1,3,4}));
+
+        //面试题44. 数字序列中某一位的数字
+        //FindNthDigit findNthDigit = new FindNthDigit();
+        //System.out.println(findNthDigit.findNthDigit(2147483646));
+
+        //面试题61. 扑克牌中的顺子
+        IsStraight isStraight = new IsStraight();
+        System.out.println(isStraight.isStraight(new int[]{0,12,11,11,0}));
+
     }
 
     public static TreeNode stringToTreeNode(String input) {
