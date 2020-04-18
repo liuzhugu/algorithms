@@ -391,8 +391,12 @@ public class LeetCodeTest {
         //System.out.println(merge.merge(new int[][]{{1,3},{2,6},{8,10},{15,18}}));
 
         //45. 跳跃游戏 II
-        Jump jump = new Jump();
-        System.out.println(jump.jump(new int[]{2,3,1,1,4}));
+        //Jump jump = new Jump();
+        //System.out.println(jump.jump(new int[]{2,3,1,1,4}));
+
+        //11. 盛最多水的容器
+        MaxArea maxArea = new MaxArea();
+        System.out.println(maxArea.maxArea(new int[]{1,8,6,2,5,4,8,3,7}));
     }
 
 

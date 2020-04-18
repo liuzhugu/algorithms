@@ -102,8 +102,21 @@ public class JianZhiTest {
         //System.out.println(isStraight.isStraight(new int[]{0,12,11,11,0}));
 
         //面试题14- II. 剪绳子 II
-        CuttingRope cuttingRope = new CuttingRope();
-        System.out.println(cuttingRope.cuttingRope(1000));
+        //CuttingRope cuttingRope = new CuttingRope();
+        //System.out.println(cuttingRope.cuttingRope(1000));
+
+        //面试题56 - II. 数组中数字出现的次数 II
+        //SingleNumber singleNumber = new SingleNumber();
+        //System.out.println(singleNumber.singleNumber(new int[]{3,4,3,3}));
+
+        //面试题41. 数据流中的中位数
+        MedianFinder medianFinder = new MedianFinder();
+        medianFinder.addNum(1);
+        medianFinder.addNum(2);
+        medianFinder.addNum(3);
+        medianFinder.addNum(4);
+        medianFinder.addNum(5);
+        System.out.println(medianFinder.findMedian());
     }
 
     public static TreeNode stringToTreeNode(String input) {

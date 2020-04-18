@@ -9,11 +9,10 @@ public class CuttingRope {
 
     //需要取模
     public int cuttingRope(int n) {
-        int end = n / 3 >= 2 ? (n + 1) / 3 : 2;
+        int num = n / 3 >= 2 ? (n + 1) / 3 : 2;
         int ans = 0;
-        int remainder = n % end;
-        int quotient = n / end;
-        int num = end;
+        int remainder = n % num;
+        int quotient = n / num;
         long product = 1;
         int mod = (int)1e9+7;
         while (num > 0) {
