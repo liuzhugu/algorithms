@@ -110,13 +110,13 @@ public class JianZhiTest {
         //System.out.println(singleNumber.singleNumber(new int[]{3,4,3,3}));
 
         //面试题41. 数据流中的中位数
-        MedianFinder medianFinder = new MedianFinder();
-        medianFinder.addNum(1);
-        medianFinder.addNum(2);
-        medianFinder.addNum(3);
-        medianFinder.addNum(4);
-        medianFinder.addNum(5);
-        System.out.println(medianFinder.findMedian());
+//        MedianFinder medianFinder = new MedianFinder();
+//        medianFinder.addNum(1);
+//        medianFinder.addNum(2);
+//        medianFinder.addNum(3);
+//        medianFinder.addNum(4);
+//        medianFinder.addNum(5);
+//        System.out.println(medianFinder.findMedian());
     }
 
     public static TreeNode stringToTreeNode(String input) {
