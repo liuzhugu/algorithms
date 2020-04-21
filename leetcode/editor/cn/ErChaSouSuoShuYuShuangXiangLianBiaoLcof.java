@@ -41,9 +41,9 @@ public class ErChaSouSuoShuYuShuangXiangLianBiaoLcof{
     public static void main(String[] args) {
         Solution solution = new ErChaSouSuoShuYuShuangXiangLianBiaoLcof().new Solution();
         //TO TEST
-        solution.treeToDoublyList(stringToTreeNode("[4,2,5,1,3]"));
+        solution.treeToDoublyList(stringToNode("[4,2,5,1,3]"));
     }
-    public static Node stringToTreeNode(String input) {
+    public static Node stringToNode(String input) {
         input = input.trim();
         input = input.substring(1, input.length() - 1);
         if (input.length() == 0) {

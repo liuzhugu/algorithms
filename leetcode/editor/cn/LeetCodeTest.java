@@ -428,6 +428,11 @@ public class LeetCodeTest {
         return output;
     }
 
+    public static String strDeal(String str) {
+        return str.replace("[","{").replace("]","}")
+                .replace("\"","'");
+    }
+
     public static String listNodeToString(ListNode node) {
         if (node == null) {
             return "[]";
