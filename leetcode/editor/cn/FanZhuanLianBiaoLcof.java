@@ -22,7 +22,7 @@ package leetcode.editor.cn;
 
 import java.util.Stack;
 
-//Java：面试题24:反转链表
+//Java：面试题24:反转链表 2020/04/22
 public class FanZhuanLianBiaoLcof{
     public static void main(String[] args) {
         Solution solution = new FanZhuanLianBiaoLcof().new Solution();

@@ -23,7 +23,7 @@ package leetcode.editor.cn;
 
 import java.util.*;
 
-//Java：面试题38:字符串的排列
+//Java：面试题38:字符串的排列 交换字符位置 2020/04/22
 public class ZiFuChuanDePaiLieLcof{
     public static void main(String[] args) {
         Solution solution = new ZiFuChuanDePaiLieLcof().new Solution();
