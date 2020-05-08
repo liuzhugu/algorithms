@@ -38,7 +38,7 @@
 // Related Topics 数组 双指针
 
 package leetcode.editor.cn;
-//Java：80:删除排序数组中的重复项 II
+//Java：80:删除排序数组中的重复项 II 2020/05/05
 public class RemoveDuplicatesFromSortedArrayIi{
     public static void main(String[] args) {
         Solution solution = new RemoveDuplicatesFromSortedArrayIi().new Solution();
