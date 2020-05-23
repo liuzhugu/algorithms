@@ -49,7 +49,7 @@ public class MinimumWindowSubstring{
                 if (mapT.containsKey(rightChar)) {
                     mapS.put(rightChar, mapS.getOrDefault(rightChar, 0) + 1);
                     if (mapT.get(rightChar).equals(mapS.get(rightChar))) {
-                        match++;
+                        match ++;
                     }
                 }
                 //满足条件  开始滑动窗口
