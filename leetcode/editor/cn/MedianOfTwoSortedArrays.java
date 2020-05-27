@@ -22,7 +22,7 @@
 // Related Topics 数组 二分查找 分治算法
 
 package leetcode.editor.cn;
-//Java：4:寻找两个有序数组的中位数 2020/04/24
+//Java：4:寻找两个有序数组的中位数 2020/05/24
 public class MedianOfTwoSortedArrays{
     public static void main(String[] args) {
         Solution solution = new MedianOfTwoSortedArrays().new Solution();
