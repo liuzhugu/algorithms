@@ -20,7 +20,7 @@ package leetcode.editor.cn;
 import java.util.LinkedList;
 import java.util.Stack;
 
-//Java：394:字符串解码 2020/05/12
+//Java：394:字符串解码
 public class DecodeString{
     public static void main(String[] args) {
         Solution solution = new DecodeString().new Solution();
