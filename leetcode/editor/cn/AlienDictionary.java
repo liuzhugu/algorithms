@@ -57,7 +57,7 @@ package leetcode.editor.cn;
 
 import java.util.*;
 
-//Java：269:火星词典
+//Java：269:火星词典 2020/06/08
 public class AlienDictionary{
     public static void main(String[] args) {
         Solution solution = new AlienDictionary().new Solution();
@@ -82,7 +82,7 @@ public class AlienDictionary{
                     }
                     index ++;
                     // 这个就是为了克服abc和ab的问题, 也就是两个字符串前面的部分完全相等(所以在上面的循环结束后j==words[i+1].size()), 但是长的在前面, 短的在后面, 这样是错误的. 直接返回""
-                    if(index ==words[i+1].length() && words[i].length() > words[i+1].length())
+                    if(index == words[i+1].length() && words[i].length() > words[i+1].length())
                         return "";
                 }
             }
