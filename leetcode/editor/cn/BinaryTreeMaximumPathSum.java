@@ -38,6 +38,7 @@ public class BinaryTreeMaximumPathSum{
 
 
     class Solution {
+        //比较左子树  右子树   然后选一个大的加上根节点往上传递
         public int maxPathSum(TreeNode root) {
             int ans = visit(root);
             ans = Math.max(max,ans);

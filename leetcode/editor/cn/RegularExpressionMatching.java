@@ -1,5 +1,17 @@
-//请实现一个函数用来匹配包含'. '和'*'的正则表达式。模式中的字符'.'表示任意一个字符，而'*'表示它前面的字符可以出现任意次（含0次）。在本题中，匹配
-//是指字符串的所有字符匹配整个模式。例如，字符串"aaa"与模式"a.a"和"ab*ac*a"匹配，但与"aa.a"和"ab*a"均不匹配。 
+//给你一个字符串 s 和一个字符规律 p，请你来实现一个支持 '.' 和 '*' 的正则表达式匹配。 
+//
+// '.' 匹配任意单个字符
+//'*' 匹配零个或多个前面的那一个元素
+// 
+//
+// 所谓匹配，是要涵盖 整个 字符串 s的，而不是部分字符串。 
+//
+// 说明: 
+//
+// 
+// s 可能为空，且只包含从 a-z 的小写字母。 
+// p 可能为空，且只包含从 a-z 的小写字母，以及字符 . 和 *。 
+// 
 //
 // 示例 1: 
 //
@@ -43,34 +55,20 @@
 //s = "mississippi"
 //p = "mis*is*p*."
 //输出: false 
-//
-// 
-// s 可能为空，且只包含从 a-z 的小写字母。 
-// p 可能为空，且只包含从 a-z 的小写字母，以及字符 . 和 *。 
-// 
-//
-// 注意：本题与主站 10 题相同：https://leetcode-cn.com/problems/regular-expression-matching/
-// 
-// Related Topics 动态规划
+// Related Topics 字符串 动态规划 回溯算法
 
 package leetcode.editor.cn;
-//Java：面试题19:正则表达式匹配 动态规划 2020/04/21
-public class ZhengZeBiaoDaShiPiPeiLcof{
+//Java：10:正则表达式匹配
+public class RegularExpressionMatching{
     public static void main(String[] args) {
-        Solution solution = new ZhengZeBiaoDaShiPiPeiLcof().new Solution();
-        //TO TEST
-        System.out.println(solution.isMatch("aaba","ab*a*c*a"));
+        Solution solution = new RegularExpressionMatching().new Solution();
+        //TO TEST 
     }
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
-        //俩维动态规划步骤
-        //1. dp[0][0] 初始化
-        //2. dp[0][i]  dp[i][0] 初始化
-        //3. 递推
-        //返回结果
         public boolean isMatch(String s, String p) {
-            if (s == null || p == null) {
-                return false;
+            if ((s == null || s.length() == 0) &&  (p == null || p.length() == 0)) {
+                return true;
             }
             int m = s.length(),n = p.length();
             char[] c1 = s.toCharArray(),c2 = p.toCharArray();
