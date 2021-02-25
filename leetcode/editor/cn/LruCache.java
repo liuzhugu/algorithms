@@ -51,9 +51,11 @@ public class LruCache{
     }
     //leetcode submit region begin(Prohibit modification and deletion)
     class LRUCache {
-        private Deque<Integer> deque;
         private int capacity;
         private int count;
+        //记录访问顺序
+        private Deque<Integer> deque;
+        //真正存放数据的地方
         Map<Integer,Integer> cache;
         public LRUCache(int capacity) {
             deque = new LinkedList<>();
